@@ -19,6 +19,8 @@
 		DCBE0C2725659CE900DA2045 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE0C2625659CE900DA2045 /* EditItemView.swift */; };
 		DCBE0C2A2565A06F00DA2045 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE0C292565A06F00DA2045 /* ItemRowView.swift */; };
 		DCBE0C2D2565A71700DA2045 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE0C2C2565A71700DA2045 /* Binding-OnChange.swift */; };
+		DCBE0C302565AAEC00DA2045 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE0C2F2565AAEC00DA2045 /* ProjectHeaderView.swift */; };
+		DCBE0C332565AE4200DA2045 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBE0C322565AE4200DA2045 /* Colors.xcassets */; };
 		DCCEAE8D25444F920081EC99 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEAE8C25444F920081EC99 /* Item-CoreDataHelpers.swift */; };
 		DCCEAE90254450C30081EC99 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEAE8F254450C30081EC99 /* Project-CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +41,8 @@
 		DCBE0C2625659CE900DA2045 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		DCBE0C292565A06F00DA2045 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		DCBE0C2C2565A71700DA2045 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
+		DCBE0C2F2565AAEC00DA2045 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
+		DCBE0C322565AE4200DA2045 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DCCEAE8C25444F920081EC99 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		DCCEAE8F254450C30081EC99 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,8 +96,10 @@
 				DCCEAE8F254450C30081EC99 /* Project-CoreDataHelpers.swift */,
 				DCADD0BB2541DA5D00086DD6 /* ContentView.swift */,
 				DCBE0C2625659CE900DA2045 /* EditItemView.swift */,
+				DCBE0C2F2565AAEC00DA2045 /* ProjectHeaderView.swift */,
 				DCBE0C2C2565A71700DA2045 /* Binding-OnChange.swift */,
 				DCADD0BD2541DA5D00086DD6 /* Assets.xcassets */,
+				DCBE0C322565AE4200DA2045 /* Colors.xcassets */,
 				DCADD0C22541DA5D00086DD6 /* Info.plist */,
 				DCADD0BF2541DA5D00086DD6 /* Preview Content */,
 				DC54AD242541F288009C840C /* Main.xcdatamodeld */,
@@ -167,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCBE0C332565AE4200DA2045 /* Colors.xcassets in Resources */,
 				DCADD0C12541DA5D00086DD6 /* Preview Assets.xcassets in Resources */,
 				DCADD0BE2541DA5D00086DD6 /* Assets.xcassets in Resources */,
 			);
@@ -180,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC21B1642541EF3600226C6E /* ProjectsView.swift in Sources */,
+				DCBE0C302565AAEC00DA2045 /* ProjectHeaderView.swift in Sources */,
 				DCADD0BC2541DA5D00086DD6 /* ContentView.swift in Sources */,
 				DCCEAE90254450C30081EC99 /* Project-CoreDataHelpers.swift in Sources */,
 				DC21B1572541E4B100226C6E /* DataController.swift in Sources */,
