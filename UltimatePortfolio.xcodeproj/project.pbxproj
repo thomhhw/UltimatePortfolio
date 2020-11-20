@@ -21,8 +21,10 @@
 		DCBE0C2D2565A71700DA2045 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE0C2C2565A71700DA2045 /* Binding-OnChange.swift */; };
 		DCBE0C302565AAEC00DA2045 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE0C2F2565AAEC00DA2045 /* ProjectHeaderView.swift */; };
 		DCBE0C332565AE4200DA2045 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBE0C322565AE4200DA2045 /* Colors.xcassets */; };
+		DCBE0C362565AF8D00DA2045 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE0C352565AF8D00DA2045 /* EditProjectView.swift */; };
 		DCCEAE8D25444F920081EC99 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEAE8C25444F920081EC99 /* Item-CoreDataHelpers.swift */; };
 		DCCEAE90254450C30081EC99 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEAE8F254450C30081EC99 /* Project-CoreDataHelpers.swift */; };
+		DCFA7F3C2566EBC400F0AC60 /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA7F3B2566EBC400F0AC60 /* Sequence-Sorting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +45,10 @@
 		DCBE0C2C2565A71700DA2045 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
 		DCBE0C2F2565AAEC00DA2045 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		DCBE0C322565AE4200DA2045 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DCBE0C352565AF8D00DA2045 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		DCCEAE8C25444F920081EC99 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		DCCEAE8F254450C30081EC99 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		DCFA7F3B2566EBC400F0AC60 /* Sequence-Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence-Sorting.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +95,14 @@
 				DCADD0B92541DA5D00086DD6 /* UltimatePortfolioApp.swift */,
 				DC21B1602541EE4C00226C6E /* HomeView.swift */,
 				DC21B1632541EF3600226C6E /* ProjectsView.swift */,
+				DCFA7F3B2566EBC400F0AC60 /* Sequence-Sorting.swift */,
 				DCBE0C292565A06F00DA2045 /* ItemRowView.swift */,
 				DCCEAE8C25444F920081EC99 /* Item-CoreDataHelpers.swift */,
 				DCCEAE8F254450C30081EC99 /* Project-CoreDataHelpers.swift */,
 				DCADD0BB2541DA5D00086DD6 /* ContentView.swift */,
 				DCBE0C2625659CE900DA2045 /* EditItemView.swift */,
 				DCBE0C2F2565AAEC00DA2045 /* ProjectHeaderView.swift */,
+				DCBE0C352565AF8D00DA2045 /* EditProjectView.swift */,
 				DCBE0C2C2565A71700DA2045 /* Binding-OnChange.swift */,
 				DCADD0BD2541DA5D00086DD6 /* Assets.xcassets */,
 				DCBE0C322565AE4200DA2045 /* Colors.xcassets */,
@@ -190,10 +196,12 @@
 				DCBE0C302565AAEC00DA2045 /* ProjectHeaderView.swift in Sources */,
 				DCADD0BC2541DA5D00086DD6 /* ContentView.swift in Sources */,
 				DCCEAE90254450C30081EC99 /* Project-CoreDataHelpers.swift in Sources */,
+				DCBE0C362565AF8D00DA2045 /* EditProjectView.swift in Sources */,
 				DC21B1572541E4B100226C6E /* DataController.swift in Sources */,
 				DCBE0C2A2565A06F00DA2045 /* ItemRowView.swift in Sources */,
 				DCADD0BA2541DA5D00086DD6 /* UltimatePortfolioApp.swift in Sources */,
 				DCBE0C2D2565A71700DA2045 /* Binding-OnChange.swift in Sources */,
+				DCFA7F3C2566EBC400F0AC60 /* Sequence-Sorting.swift in Sources */,
 				DC54AD262541F288009C840C /* Main.xcdatamodeld in Sources */,
 				DC21B1612541EE4C00226C6E /* HomeView.swift in Sources */,
 				DCCEAE8D25444F920081EC99 /* Item-CoreDataHelpers.swift in Sources */,
