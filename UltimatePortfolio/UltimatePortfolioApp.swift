@@ -12,7 +12,7 @@ struct UltimatePortfolioApp: App {
     @StateObject var dataController: DataController
     
     init() {
-        let dataController = DataController()
+        let dataController = DataController(inMemory: false)
         _dataController = StateObject(wrappedValue: dataController)
     }
     
