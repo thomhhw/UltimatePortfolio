@@ -16,12 +16,11 @@ extension Sequence {
             try areInIncreasingOrder($0[keyPath: keyPath], $1[keyPath: keyPath])
         }
     }
-    
+
     func sorted<Value: Comparable>(by keyPath: KeyPath<Element, Value>) -> [Element] {
         self.sorted(by: keyPath, using: <)
     }
-    
-    
+
     func sorted(by sortDescriptors: [NSSortDescriptor]) -> [Element] {
         self.sorted {
             for descriptor in sortDescriptors {
@@ -34,9 +33,9 @@ extension Sequence {
                     continue
                 }
             }
-            
+
             return false
         }
     }
-    
+
 }

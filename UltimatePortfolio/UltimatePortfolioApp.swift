@@ -10,12 +10,12 @@ import SwiftUI
 @main
 struct UltimatePortfolioApp: App {
     @StateObject var dataController: DataController
-    
+
     init() {
         let dataController = DataController(inMemory: false)
         _dataController = StateObject(wrappedValue: dataController)
     }
-    
+
     var body: some Scene {
         WindowGroup {
             ContentView()
@@ -24,7 +24,7 @@ struct UltimatePortfolioApp: App {
                 .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification), perform: save)
         }
     }
-    
+
     func save(_ note: Notification) {
         dataController.save()
     }
