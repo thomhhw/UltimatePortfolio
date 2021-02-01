@@ -94,6 +94,81 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC83CE7C25C822E0003D3F3A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC24B3FD2567F5C100C21F1D /* Bundle-Decodable.swift */,
+				DCFA7F3B2566EBC400F0AC60 /* Sequence-Sorting.swift */,
+				DCBE0C2C2565A71700DA2045 /* Binding-OnChange.swift */,
+				DC354836257AA260004B583D /* Color-Additions.swift */,
+				DCCEAE8C25444F920081EC99 /* Item-CoreDataHelpers.swift */,
+				DCCEAE8F254450C30081EC99 /* Project-CoreDataHelpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC83CE7D25C822E6003D3F3A /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				DC0949EF2588EF27006F5374 /* Localizable.stringsdict */,
+				DC0949EB2588EF20006F5374 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		DC83CE7E25C822EC003D3F3A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				DCADD0C22541DA5D00086DD6 /* Info.plist */,
+				DC54AD242541F288009C840C /* Main.xcdatamodeld */,
+				DC21B15A2541ED3800226C6E /* UltimatePortfolio.entitlements */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		DC83CE8325C824BF003D3F3A /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				DC83CE8425C824D0003D3F3A /* Home */,
+				DC83CE8525C824DA003D3F3A /* Projects */,
+				DC83CE8625C824DF003D3F3A /* Awards */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		DC83CE8425C824D0003D3F3A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DC21B1602541EE4C00226C6E /* HomeView.swift */,
+				DCC6F6A025A078850027A6D9 /* ItemListView.swift */,
+				DCC6F6A325A0794D0027A6D9 /* ProjectSummaryView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DC83CE8525C824DA003D3F3A /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				DC21B1632541EF3600226C6E /* ProjectsView.swift */,
+				DC24B3FA2567F2A100C21F1D /* SelectSomethingView.swift */,
+				DCBE0C2F2565AAEC00DA2045 /* ProjectHeaderView.swift */,
+				DCBE0C292565A06F00DA2045 /* ItemRowView.swift */,
+				DCBE0C352565AF8D00DA2045 /* EditProjectView.swift */,
+				DCBE0C2625659CE900DA2045 /* EditItemView.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		DC83CE8625C824DF003D3F3A /* Awards */ = {
+			isa = PBXGroup;
+			children = (
+				DC24B4062567F76100C21F1D /* AwardsView.swift */,
+				DC24B4032567F6D300C21F1D /* Award.swift */,
+				DC0949F62588EF7A006F5374 /* Awards.json */,
+			);
+			path = Awards;
+			sourceTree = "<group>";
+		};
 		DCADD0AD2541DA5C00086DD6 = {
 			isa = PBXGroup;
 			children = (
@@ -114,35 +189,16 @@
 		DCADD0B82541DA5D00086DD6 /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
-				DC21B15A2541ED3800226C6E /* UltimatePortfolio.entitlements */,
+				DC83CE8325C824BF003D3F3A /* Activities */,
+				DC83CE7C25C822E0003D3F3A /* Extensions */,
+				DC83CE7D25C822E6003D3F3A /* Localization */,
+				DC83CE7E25C822EC003D3F3A /* Configuration */,
 				DCADD0B92541DA5D00086DD6 /* UltimatePortfolioApp.swift */,
-				DC21B1602541EE4C00226C6E /* HomeView.swift */,
-				DCC6F6A325A0794D0027A6D9 /* ProjectSummaryView.swift */,
-				DCC6F6A025A078850027A6D9 /* ItemListView.swift */,
-				DC21B1632541EF3600226C6E /* ProjectsView.swift */,
-				DC24B3FD2567F5C100C21F1D /* Bundle-Decodable.swift */,
-				DC24B3FA2567F2A100C21F1D /* SelectSomethingView.swift */,
-				DCFA7F3B2566EBC400F0AC60 /* Sequence-Sorting.swift */,
-				DCBE0C292565A06F00DA2045 /* ItemRowView.swift */,
-				DCCEAE8C25444F920081EC99 /* Item-CoreDataHelpers.swift */,
-				DCCEAE8F254450C30081EC99 /* Project-CoreDataHelpers.swift */,
+				DC21B1562541E4B100226C6E /* DataController.swift */,
 				DCADD0BB2541DA5D00086DD6 /* ContentView.swift */,
-				DCBE0C2625659CE900DA2045 /* EditItemView.swift */,
-				DCBE0C2F2565AAEC00DA2045 /* ProjectHeaderView.swift */,
-				DCBE0C352565AF8D00DA2045 /* EditProjectView.swift */,
-				DCBE0C2C2565A71700DA2045 /* Binding-OnChange.swift */,
-				DC0949F62588EF7A006F5374 /* Awards.json */,
-				DC24B4032567F6D300C21F1D /* Award.swift */,
-				DC24B4062567F76100C21F1D /* AwardsView.swift */,
-				DC0949EB2588EF20006F5374 /* Localizable.strings */,
-				DC0949EF2588EF27006F5374 /* Localizable.stringsdict */,
-				DC354836257AA260004B583D /* Color-Additions.swift */,
 				DCADD0BD2541DA5D00086DD6 /* Assets.xcassets */,
 				DCBE0C322565AE4200DA2045 /* Colors.xcassets */,
-				DCADD0C22541DA5D00086DD6 /* Info.plist */,
 				DCADD0BF2541DA5D00086DD6 /* Preview Content */,
-				DC54AD242541F288009C840C /* Main.xcdatamodeld */,
-				DC21B1562541E4B100226C6E /* DataController.swift */,
 			);
 			path = UltimatePortfolio;
 			sourceTree = "<group>";
@@ -431,12 +487,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = 2BRLV2FEPT;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
+				INFOPLIST_FILE = UltimatePortfolio/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,12 +510,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
 				DEVELOPMENT_TEAM = 2BRLV2FEPT;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
+				INFOPLIST_FILE = UltimatePortfolio/Configuration/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
