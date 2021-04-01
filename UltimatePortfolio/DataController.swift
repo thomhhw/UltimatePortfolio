@@ -15,13 +15,13 @@ class DataController: ObservableObject {
     /// The lone CloudKit container used to store all our data.
     let container: NSPersistentCloudKitContainer
 
-    /// Initializes a data controller, either in memory (for temporary use such as testing and previewing),
+    /// Initialises a data controller, either in memory (for temporary use such as testing and previewing),
     /// or on permanent storage (for use in regular app runs.)
     ///
     /// Defaults to permanent storage.
     /// - Parameter inMemory: Whether to store this data in temporary memory or not.
     init(inMemory: Bool = true) {
-        self.container = NSPersistentCloudKitContainer(name: "Main")
+        self.container = NSPersistentCloudKitContainer(name: "Main", managedObjectModel: Self.model)
 
         // For testing and previewing purposes, we create a temporary,
         // in-memory database by writing to /dev/null so our data is
@@ -47,6 +47,18 @@ class DataController: ObservableObject {
         }
 
         return dataController
+    }()
+
+    static let model: NSManagedObjectModel = {
+        guard let url = Bundle.main.url(forResource: "Main", withExtension: "momd") else {
+            fatalError("Failed to locate model file.")
+        }
+
+        guard let managedObjectModel = NSManagedObjectModel(contentsOf: url) else {
+            fatalError("Failed to load model file.")
+        }
+
+        return managedObjectModel
     }()
 
     /// Creates example projects and items to make manual testing easier.
@@ -116,8 +128,8 @@ class DataController: ObservableObject {
             return awardCount >= award.value
 
         default:
-            // an unknown awasrd criterion; this should never be allowed
-//            fatalError("Unknown award criterion: \(award.criterion)")
+            // an unknown award criterion; this should never be allowed
+            // fatalError("Unknown award criterion: \(award.criterion)")
             return false
         }
     }
