@@ -46,7 +46,7 @@ struct EditItemView: View {
             }
         }
         .navigationTitle("Edit Item")
-        .onDisappear(perform: dataController.save)
+        .onDisappear(perform: save)
     }
 
     func update() {
@@ -58,6 +58,10 @@ struct EditItemView: View {
         item.project?.objectWillChange.send()
     }
 
+    func save() {
+        dataController.update(item)
+    }
+    
 }
 
 struct EditItemView_Previews: PreviewProvider {
