@@ -42,7 +42,7 @@ class UltimatePortfolioUITests: XCTestCase {
         app.buttons["Add New Item"].tap()
         XCTAssertEqual(app.tables.cells.count, 2, "There should be 2 list rows after adding an item.")
     }
-    
+
     func testEditingProjectUpdatesCorrectly() {
         app.buttons["Open"].tap()
         XCTAssertEqual(app.tables.cells.count, 0, "There should be no list rows initially.")
@@ -62,14 +62,14 @@ class UltimatePortfolioUITests: XCTestCase {
 
         XCTAssertTrue(app.buttons["NEW PROJECT 2"].exists, "The new project name should be visible in the list.")
     }
-    
+
     func testEditingItemUpdatesCorrectly() {
         // Go to Open projects and add one project and one item before the test.
         testAddingProjectInsertsRows()
 
         app.buttons["New Item"].tap()
         app.textFields["Item name"].tap()
-        
+
         app.keys["spatie"].tap()
         app.keys["more"].tap()
         app.keys["2"].tap()
@@ -79,7 +79,7 @@ class UltimatePortfolioUITests: XCTestCase {
 
         XCTAssertTrue(app.buttons["New Item 2"].exists, "The new item name should be visible in the list.")
     }
-    
+
     func testAllAwardsShowLockedAlert() {
         app.buttons["Awards"].tap()
 
