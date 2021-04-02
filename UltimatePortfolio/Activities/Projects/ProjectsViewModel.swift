@@ -11,13 +11,13 @@ import CoreData
 extension ProjectsView {
     class ViewModel: NSObject, ObservableObject, NSFetchedResultsControllerDelegate {
         let dataController: DataController
-        
+
         var sortOrder = Item.SortOrder.optimized
         let showClosedProjects: Bool
-        
+
         private let projectsController: NSFetchedResultsController<Project>
         @Published var projects = [Project]()
-        
+
         init(dataController: DataController, showClosedProjects: Bool) {
             self.dataController = dataController
             self.showClosedProjects = showClosedProjects
@@ -25,17 +25,17 @@ extension ProjectsView {
             let request: NSFetchRequest<Project> = Project.fetchRequest()
             request.sortDescriptors = [NSSortDescriptor(keyPath: \Project.creationDate, ascending: false)]
             request.predicate = NSPredicate(format: "closed = %d", showClosedProjects)
-            
+
             projectsController = NSFetchedResultsController(
                 fetchRequest: request,
                 managedObjectContext: dataController.container.viewContext,
                 sectionNameKeyPath: nil,
                 cacheName: nil
             )
-            
+
             super.init()
             projectsController.delegate = self
-            
+
             do {
                 try projectsController.performFetch()
                 projects = projectsController.fetchedObjects ?? []
@@ -43,7 +43,7 @@ extension ProjectsView {
                 print("Failed to fetch our projects!")
             }
         }
-        
+
         func addProject() {
             let project = Project(context: dataController.container.viewContext)
             project.closed = false
@@ -68,7 +68,7 @@ extension ProjectsView {
 
             dataController.save()
         }
-        
+
         func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
             if let newProjects = controller.fetchedObjects as? [Project] {
                 projects = newProjects
