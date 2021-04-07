@@ -86,7 +86,7 @@ extension HomeView {
             dataController.deleteAll()
             try? dataController.createSampleData()
         }
-        
+
         func selectItem(with identifier: String) {
             selectedItem = dataController.item(with: identifier)
         }

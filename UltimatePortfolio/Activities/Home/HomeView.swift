@@ -34,7 +34,7 @@ struct HomeView: View {
                     )
                     .id(item)
                 }
-                
+
                 VStack(alignment: .leading) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         LazyHGrid(rows: projectRows) {
@@ -59,7 +59,7 @@ struct HomeView: View {
             .onContinueUserActivity(CSSearchableItemActionType, perform: loadSpotlightItem)
         }
     }
-    
+
     func loadSpotlightItem(_ userActivity: NSUserActivity) {
         if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
             viewModel.selectItem(with: uniqueIdentifier)

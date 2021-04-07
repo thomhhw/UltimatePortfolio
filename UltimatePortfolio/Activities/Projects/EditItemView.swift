@@ -61,7 +61,7 @@ struct EditItemView: View {
     func save() {
         dataController.update(item)
     }
-    
+
 }
 
 struct EditItemView_Previews: PreviewProvider {

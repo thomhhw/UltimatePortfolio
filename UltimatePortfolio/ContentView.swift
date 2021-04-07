@@ -44,7 +44,7 @@ struct ContentView: View {
         }
         .onContinueUserActivity(CSSearchableItemActionType, perform: moveToHome)
     }
-    
+
     func moveToHome(_ input: Any) {
         selectedView = HomeView.tag
     }
