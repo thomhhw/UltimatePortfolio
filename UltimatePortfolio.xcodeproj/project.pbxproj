@@ -33,6 +33,7 @@
 		DC83CEAF25C98198003D3F3A /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CEAE25C98198003D3F3A /* ExtensionTests.swift */; };
 		DC83CEB425C983FF003D3F3A /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = DC83CEB325C983FF003D3F3A /* DecodableString.json */; };
 		DC83CEBA25C9840E003D3F3A /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = DC83CEB925C9840E003D3F3A /* DecodableDictionary.json */; };
+		DCA74D14261DE08A0009121E /* UnlockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA74D13261DE08A0009121E /* UnlockManager.swift */; };
 		DCADD0BA2541DA5D00086DD6 /* UltimatePortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADD0B92541DA5D00086DD6 /* UltimatePortfolioApp.swift */; };
 		DCADD0BC2541DA5D00086DD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADD0BB2541DA5D00086DD6 /* ContentView.swift */; };
 		DCADD0BE2541DA5D00086DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCADD0BD2541DA5D00086DD6 /* Assets.xcassets */; };
@@ -102,6 +103,8 @@
 		DC83CEAE25C98198003D3F3A /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
 		DC83CEB325C983FF003D3F3A /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
 		DC83CEB925C9840E003D3F3A /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
+		DCA74D13261DE08A0009121E /* UnlockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockManager.swift; sourceTree = "<group>"; };
+		DCA74D15261DE2310009121E /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		DCADD0B62541DA5D00086DD6 /* UltimatePortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCADD0B92541DA5D00086DD6 /* UltimatePortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioApp.swift; sourceTree = "<group>"; };
 		DCADD0BB2541DA5D00086DD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -297,6 +300,8 @@
 				DC83CE7E25C822EC003D3F3A /* Configuration */,
 				DCADD0B92541DA5D00086DD6 /* UltimatePortfolioApp.swift */,
 				DC21B1562541E4B100226C6E /* DataController.swift */,
+				DCA74D13261DE08A0009121E /* UnlockManager.swift */,
+				DCA74D15261DE2310009121E /* Configuration.storekit */,
 				DCADD0BB2541DA5D00086DD6 /* ContentView.swift */,
 				DCADD0BD2541DA5D00086DD6 /* Assets.xcassets */,
 				DCBE0C322565AE4200DA2045 /* Colors.xcassets */,
@@ -499,6 +504,7 @@
 				DC24B4072567F76100C21F1D /* AwardsView.swift in Sources */,
 				DCADD0BC2541DA5D00086DD6 /* ContentView.swift in Sources */,
 				DC2EE51A26171FF40086F903 /* HomeViewModel.swift in Sources */,
+				DCA74D14261DE08A0009121E /* UnlockManager.swift in Sources */,
 				DCCEAE90254450C30081EC99 /* Project-CoreDataHelpers.swift in Sources */,
 				DC354837257AA260004B583D /* Color-Additions.swift in Sources */,
 				DCBE0C362565AF8D00DA2045 /* EditProjectView.swift in Sources */,
