@@ -23,6 +23,10 @@
 		DC2EE515261717780086F903 /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2EE514261717780086F903 /* ProjectsViewModel.swift */; };
 		DC2EE51A26171FF40086F903 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2EE51926171FF40086F903 /* HomeViewModel.swift */; };
 		DC2EE51F261724EE0086F903 /* ItemRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2EE51E261724EE0086F903 /* ItemRowViewModel.swift */; };
+		DC3324A92621E22800A2C5F4 /* SKProduct-LocalizedPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3324A82621E22800A2C5F4 /* SKProduct-LocalizedPrice.swift */; };
+		DC3324AB2621E2D100A2C5F4 /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3324AA2621E2D100A2C5F4 /* PurchaseButton.swift */; };
+		DC3324AD2621E3BC00A2C5F4 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3324AC2621E3BC00A2C5F4 /* ProductView.swift */; };
+		DC3324AF2621E50E00A2C5F4 /* UnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3324AE2621E50E00A2C5F4 /* UnlockView.swift */; };
 		DC354837257AA260004B583D /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC354836257AA260004B583D /* Color-Additions.swift */; };
 		DC54AD262541F288009C840C /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC54AD242541F288009C840C /* Main.xcdatamodeld */; };
 		DC83CE9125C829A0003D3F3A /* UltimatePortfolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CE9025C829A0003D3F3A /* UltimatePortfolioTests.swift */; };
@@ -91,6 +95,10 @@
 		DC2EE514261717780086F903 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
 		DC2EE51926171FF40086F903 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		DC2EE51E261724EE0086F903 /* ItemRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowViewModel.swift; sourceTree = "<group>"; };
+		DC3324A82621E22800A2C5F4 /* SKProduct-LocalizedPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKProduct-LocalizedPrice.swift"; sourceTree = "<group>"; };
+		DC3324AA2621E2D100A2C5F4 /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
+		DC3324AC2621E3BC00A2C5F4 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		DC3324AE2621E50E00A2C5F4 /* UnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockView.swift; sourceTree = "<group>"; };
 		DC354836257AA260004B583D /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
 		DC54AD252541F288009C840C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DC83CE8E25C829A0003D3F3A /* UltimatePortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimatePortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +175,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DC3324B02621E87300A2C5F4 /* Unlock */ = {
+			isa = PBXGroup;
+			children = (
+				DC3324AC2621E3BC00A2C5F4 /* ProductView.swift */,
+				DC3324AA2621E2D100A2C5F4 /* PurchaseButton.swift */,
+				DCA74D13261DE08A0009121E /* UnlockManager.swift */,
+				DC3324AE2621E50E00A2C5F4 /* UnlockView.swift */,
+			);
+			path = Unlock;
+			sourceTree = "<group>";
+		};
 		DC83CE7C25C822E0003D3F3A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +195,7 @@
 				DC354836257AA260004B583D /* Color-Additions.swift */,
 				DCCEAE8C25444F920081EC99 /* Item-CoreDataHelpers.swift */,
 				DCCEAE8F254450C30081EC99 /* Project-CoreDataHelpers.swift */,
+				DC3324A82621E22800A2C5F4 /* SKProduct-LocalizedPrice.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -194,6 +214,7 @@
 			children = (
 				DCADD0C22541DA5D00086DD6 /* Info.plist */,
 				DC54AD242541F288009C840C /* Main.xcdatamodeld */,
+				DCA74D15261DE2310009121E /* Configuration.storekit */,
 				DC21B15A2541ED3800226C6E /* UltimatePortfolio.entitlements */,
 			);
 			path = Configuration;
@@ -205,6 +226,7 @@
 				DC83CE8425C824D0003D3F3A /* Home */,
 				DC83CE8525C824DA003D3F3A /* Projects */,
 				DC83CE8625C824DF003D3F3A /* Awards */,
+				DC3324B02621E87300A2C5F4 /* Unlock */,
 			);
 			path = Activities;
 			sourceTree = "<group>";
@@ -300,8 +322,6 @@
 				DC83CE7E25C822EC003D3F3A /* Configuration */,
 				DCADD0B92541DA5D00086DD6 /* UltimatePortfolioApp.swift */,
 				DC21B1562541E4B100226C6E /* DataController.swift */,
-				DCA74D13261DE08A0009121E /* UnlockManager.swift */,
-				DCA74D15261DE2310009121E /* Configuration.storekit */,
 				DCADD0BB2541DA5D00086DD6 /* ContentView.swift */,
 				DCADD0BD2541DA5D00086DD6 /* Assets.xcassets */,
 				DCBE0C322565AE4200DA2045 /* Colors.xcassets */,
@@ -500,7 +520,9 @@
 			files = (
 				DC21B1642541EF3600226C6E /* ProjectsView.swift in Sources */,
 				DCC6F6A425A0794D0027A6D9 /* ProjectSummaryView.swift in Sources */,
+				DC3324AB2621E2D100A2C5F4 /* PurchaseButton.swift in Sources */,
 				DCBE0C302565AAEC00DA2045 /* ProjectHeaderView.swift in Sources */,
+				DC3324AD2621E3BC00A2C5F4 /* ProductView.swift in Sources */,
 				DC24B4072567F76100C21F1D /* AwardsView.swift in Sources */,
 				DCADD0BC2541DA5D00086DD6 /* ContentView.swift in Sources */,
 				DC2EE51A26171FF40086F903 /* HomeViewModel.swift in Sources */,
@@ -512,6 +534,7 @@
 				DC24B3FB2567F2A100C21F1D /* SelectSomethingView.swift in Sources */,
 				DC24B4042567F6D300C21F1D /* Award.swift in Sources */,
 				DCBE0C2A2565A06F00DA2045 /* ItemRowView.swift in Sources */,
+				DC3324AF2621E50E00A2C5F4 /* UnlockView.swift in Sources */,
 				DCADD0BA2541DA5D00086DD6 /* UltimatePortfolioApp.swift in Sources */,
 				DCBE0C2D2565A71700DA2045 /* Binding-OnChange.swift in Sources */,
 				DCFA7F3C2566EBC400F0AC60 /* Sequence-Sorting.swift in Sources */,
@@ -521,6 +544,7 @@
 				DC21B1612541EE4C00226C6E /* HomeView.swift in Sources */,
 				DC2EE51F261724EE0086F903 /* ItemRowViewModel.swift in Sources */,
 				DCCEAE8D25444F920081EC99 /* Item-CoreDataHelpers.swift in Sources */,
+				DC3324A92621E22800A2C5F4 /* SKProduct-LocalizedPrice.swift in Sources */,
 				DC2EE515261717780086F903 /* ProjectsViewModel.swift in Sources */,
 				DCBE0C2725659CE900DA2045 /* EditItemView.swift in Sources */,
 			);
