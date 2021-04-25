@@ -28,6 +28,8 @@
 		DC3324AD2621E3BC00A2C5F4 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3324AC2621E3BC00A2C5F4 /* ProductView.swift */; };
 		DC3324AF2621E50E00A2C5F4 /* UnlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3324AE2621E50E00A2C5F4 /* UnlockView.swift */; };
 		DC354837257AA260004B583D /* Color-Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC354836257AA260004B583D /* Color-Additions.swift */; };
+		DC412E81263321CB006E17B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC412E80263321CB006E17B6 /* AppDelegate.swift */; };
+		DC412E83263321D2006E17B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC412E82263321D2006E17B6 /* SceneDelegate.swift */; };
 		DC54AD262541F288009C840C /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC54AD242541F288009C840C /* Main.xcdatamodeld */; };
 		DC83CE9125C829A0003D3F3A /* UltimatePortfolioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CE9025C829A0003D3F3A /* UltimatePortfolioTests.swift */; };
 		DC83CE9D25C82B09003D3F3A /* AssetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC83CE9C25C82B09003D3F3A /* AssetTest.swift */; };
@@ -100,6 +102,8 @@
 		DC3324AC2621E3BC00A2C5F4 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		DC3324AE2621E50E00A2C5F4 /* UnlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockView.swift; sourceTree = "<group>"; };
 		DC354836257AA260004B583D /* Color-Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Additions.swift"; sourceTree = "<group>"; };
+		DC412E80263321CB006E17B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC412E82263321D2006E17B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC54AD252541F288009C840C /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DC83CE8E25C829A0003D3F3A /* UltimatePortfolioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimatePortfolioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC83CE9025C829A0003D3F3A /* UltimatePortfolioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioTests.swift; sourceTree = "<group>"; };
@@ -321,6 +325,8 @@
 				DC83CE7D25C822E6003D3F3A /* Localization */,
 				DC83CE7E25C822EC003D3F3A /* Configuration */,
 				DCADD0B92541DA5D00086DD6 /* UltimatePortfolioApp.swift */,
+				DC412E80263321CB006E17B6 /* AppDelegate.swift */,
+				DC412E82263321D2006E17B6 /* SceneDelegate.swift */,
 				DC21B1562541E4B100226C6E /* DataController.swift */,
 				DCADD0BB2541DA5D00086DD6 /* ContentView.swift */,
 				DCADD0BD2541DA5D00086DD6 /* Assets.xcassets */,
@@ -520,6 +526,7 @@
 			files = (
 				DC21B1642541EF3600226C6E /* ProjectsView.swift in Sources */,
 				DCC6F6A425A0794D0027A6D9 /* ProjectSummaryView.swift in Sources */,
+				DC412E83263321D2006E17B6 /* SceneDelegate.swift in Sources */,
 				DC3324AB2621E2D100A2C5F4 /* PurchaseButton.swift in Sources */,
 				DCBE0C302565AAEC00DA2045 /* ProjectHeaderView.swift in Sources */,
 				DC3324AD2621E3BC00A2C5F4 /* ProductView.swift in Sources */,
@@ -536,6 +543,7 @@
 				DCBE0C2A2565A06F00DA2045 /* ItemRowView.swift in Sources */,
 				DC3324AF2621E50E00A2C5F4 /* UnlockView.swift in Sources */,
 				DCADD0BA2541DA5D00086DD6 /* UltimatePortfolioApp.swift in Sources */,
+				DC412E81263321CB006E17B6 /* AppDelegate.swift in Sources */,
 				DCBE0C2D2565A71700DA2045 /* Binding-OnChange.swift in Sources */,
 				DCFA7F3C2566EBC400F0AC60 /* Sequence-Sorting.swift in Sources */,
 				DC24B3FE2567F5C100C21F1D /* Bundle-Decodable.swift in Sources */,
