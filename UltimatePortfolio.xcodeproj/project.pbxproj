@@ -12,6 +12,16 @@
 		DC0949F42588EF7A006F5374 /* Awards.json in Resources */ = {isa = PBXBuildFile; fileRef = DC0949F62588EF7A006F5374 /* Awards.json */; };
 		DC0B0DB5261633FC00DBE07D /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0B0DB4261633FC00DBE07D /* PerformanceTests.swift */; };
 		DC0B0DBF2616533300DBE07D /* UltimatePortfolioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0B0DBE2616533300DBE07D /* UltimatePortfolioUITests.swift */; };
+		DC218A0F268CE7070078ADEA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC218A0E268CE7070078ADEA /* WidgetKit.framework */; };
+		DC218A11268CE7070078ADEA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC218A10268CE7070078ADEA /* SwiftUI.framework */; };
+		DC218A14268CE7070078ADEA /* PortfolioWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC218A13268CE7070078ADEA /* PortfolioWidget.swift */; };
+		DC218A16268CE7090078ADEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC218A15268CE7090078ADEA /* Assets.xcassets */; };
+		DC218A1A268CE7090078ADEA /* PortfolioWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC218A0D268CE7070078ADEA /* PortfolioWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC218A1F268CECD00078ADEA /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC54AD242541F288009C840C /* Main.xcdatamodeld */; };
+		DC218A20268CECE60078ADEA /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEAE8C25444F920081EC99 /* Item-CoreDataHelpers.swift */; };
+		DC218A21268CECF20078ADEA /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21B1562541E4B100226C6E /* DataController.swift */; };
+		DC218A25268CEDB20078ADEA /* DataController-Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC218A24268CEDB20078ADEA /* DataController-Reminders.swift */; };
+		DC218A27268CEE1E0078ADEA /* DataController-Awards.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC218A26268CEE1E0078ADEA /* DataController-Awards.swift */; };
 		DC21B1572541E4B100226C6E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21B1562541E4B100226C6E /* DataController.swift */; };
 		DC21B15E2541ED6900226C6E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC21B15D2541ED6900226C6E /* CloudKit.framework */; };
 		DC21B1612541EE4C00226C6E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC21B1602541EE4C00226C6E /* HomeView.swift */; };
@@ -65,6 +75,13 @@
 			remoteGlobalIDString = DCADD0B52541DA5D00086DD6;
 			remoteInfo = UltimatePortfolio;
 		};
+		DC218A18268CE7090078ADEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCADD0AE2541DA5C00086DD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC218A0C268CE7070078ADEA;
+			remoteInfo = PortfolioWidgetExtension;
+		};
 		DC83CE9325C829A0003D3F3A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DCADD0AE2541DA5C00086DD6 /* Project object */;
@@ -73,6 +90,20 @@
 			remoteInfo = UltimatePortfolio;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC218A1B268CE7090078ADEA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DC218A1A268CE7090078ADEA /* PortfolioWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DC0949EA2588EF20006F5374 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -85,6 +116,15 @@
 		DC0B0DBC2616533300DBE07D /* UltimatePortfolioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimatePortfolioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC0B0DBE2616533300DBE07D /* UltimatePortfolioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioUITests.swift; sourceTree = "<group>"; };
 		DC0B0DC02616533300DBE07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC218A0D268CE7070078ADEA /* PortfolioWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PortfolioWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC218A0E268CE7070078ADEA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DC218A10268CE7070078ADEA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DC218A13268CE7070078ADEA /* PortfolioWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioWidget.swift; sourceTree = "<group>"; };
+		DC218A15268CE7090078ADEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC218A17268CE7090078ADEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC218A24268CEDB20078ADEA /* DataController-Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Reminders.swift"; sourceTree = "<group>"; };
+		DC218A26268CEE1E0078ADEA /* DataController-Awards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Awards.swift"; sourceTree = "<group>"; };
+		DC218A28268CEF230078ADEA /* PortfolioWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PortfolioWidgetExtension.entitlements; sourceTree = "<group>"; };
 		DC21B1562541E4B100226C6E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		DC21B15A2541ED3800226C6E /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
 		DC21B15D2541ED6900226C6E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -144,6 +184,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC218A0A268CE7070078ADEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC218A11268CE7070078ADEA /* SwiftUI.framework in Frameworks */,
+				DC218A0F268CE7070078ADEA /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC83CE8B25C829A0003D3F3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,10 +220,22 @@
 			path = UltimatePortfolioUITests;
 			sourceTree = "<group>";
 		};
+		DC218A12268CE7070078ADEA /* PortfolioWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DC218A13268CE7070078ADEA /* PortfolioWidget.swift */,
+				DC218A15268CE7090078ADEA /* Assets.xcassets */,
+				DC218A17268CE7090078ADEA /* Info.plist */,
+			);
+			path = PortfolioWidget;
+			sourceTree = "<group>";
+		};
 		DC21B15C2541ED6900226C6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				DC21B15D2541ED6900226C6E /* CloudKit.framework */,
+				DC218A0E268CE7070078ADEA /* WidgetKit.framework */,
+				DC218A10268CE7070078ADEA /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -299,9 +360,11 @@
 		DCADD0AD2541DA5C00086DD6 = {
 			isa = PBXGroup;
 			children = (
+				DC218A28268CEF230078ADEA /* PortfolioWidgetExtension.entitlements */,
 				DCADD0B82541DA5D00086DD6 /* UltimatePortfolio */,
 				DC83CE8F25C829A0003D3F3A /* UltimatePortfolioTests */,
 				DC0B0DBD2616533300DBE07D /* UltimatePortfolioUITests */,
+				DC218A12268CE7070078ADEA /* PortfolioWidget */,
 				DCADD0B72541DA5D00086DD6 /* Products */,
 				DC21B15C2541ED6900226C6E /* Frameworks */,
 			);
@@ -313,6 +376,7 @@
 				DCADD0B62541DA5D00086DD6 /* UltimatePortfolio.app */,
 				DC83CE8E25C829A0003D3F3A /* UltimatePortfolioTests.xctest */,
 				DC0B0DBC2616533300DBE07D /* UltimatePortfolioUITests.xctest */,
+				DC218A0D268CE7070078ADEA /* PortfolioWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -328,6 +392,8 @@
 				DC412E80263321CB006E17B6 /* AppDelegate.swift */,
 				DC412E82263321D2006E17B6 /* SceneDelegate.swift */,
 				DC21B1562541E4B100226C6E /* DataController.swift */,
+				DC218A24268CEDB20078ADEA /* DataController-Reminders.swift */,
+				DC218A26268CEE1E0078ADEA /* DataController-Awards.swift */,
 				DCADD0BB2541DA5D00086DD6 /* ContentView.swift */,
 				DCADD0BD2541DA5D00086DD6 /* Assets.xcassets */,
 				DCBE0C322565AE4200DA2045 /* Colors.xcassets */,
@@ -365,6 +431,23 @@
 			productReference = DC0B0DBC2616533300DBE07D /* UltimatePortfolioUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DC218A0C268CE7070078ADEA /* PortfolioWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC218A1E268CE7090078ADEA /* Build configuration list for PBXNativeTarget "PortfolioWidgetExtension" */;
+			buildPhases = (
+				DC218A09268CE7070078ADEA /* Sources */,
+				DC218A0A268CE7070078ADEA /* Frameworks */,
+				DC218A0B268CE7070078ADEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PortfolioWidgetExtension;
+			productName = PortfolioWidgetExtension;
+			productReference = DC218A0D268CE7070078ADEA /* PortfolioWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DC83CE8D25C829A0003D3F3A /* UltimatePortfolioTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC83CE9525C829A0003D3F3A /* Build configuration list for PBXNativeTarget "UltimatePortfolioTests" */;
@@ -391,10 +474,12 @@
 				DCADD0B32541DA5D00086DD6 /* Frameworks */,
 				DCADD0B42541DA5D00086DD6 /* Resources */,
 				DCC6F6A625A08DF30027A6D9 /* SwiftLint */,
+				DC218A1B268CE7090078ADEA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DC218A19268CE7090078ADEA /* PBXTargetDependency */,
 			);
 			name = UltimatePortfolio;
 			productName = UltimatePortfolio;
@@ -407,12 +492,15 @@
 		DCADD0AE2541DA5C00086DD6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					DC0B0DBB2616533300DBE07D = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = DCADD0B52541DA5D00086DD6;
+					};
+					DC218A0C268CE7070078ADEA = {
+						CreatedOnToolsVersion = 13.0;
 					};
 					DC83CE8D25C829A0003D3F3A = {
 						CreatedOnToolsVersion = 12.4;
@@ -440,6 +528,7 @@
 				DCADD0B52541DA5D00086DD6 /* UltimatePortfolio */,
 				DC83CE8D25C829A0003D3F3A /* UltimatePortfolioTests */,
 				DC0B0DBB2616533300DBE07D /* UltimatePortfolioUITests */,
+				DC218A0C268CE7070078ADEA /* PortfolioWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -449,6 +538,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC218A0B268CE7070078ADEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC218A16268CE7090078ADEA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +603,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC218A09268CE7070078ADEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC218A1F268CECD00078ADEA /* Main.xcdatamodeld in Sources */,
+				DC218A21268CECF20078ADEA /* DataController.swift in Sources */,
+				DC218A14268CE7070078ADEA /* PortfolioWidget.swift in Sources */,
+				DC218A20268CECE60078ADEA /* Item-CoreDataHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC83CE8A25C829A0003D3F3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -527,6 +635,7 @@
 				DC21B1642541EF3600226C6E /* ProjectsView.swift in Sources */,
 				DCC6F6A425A0794D0027A6D9 /* ProjectSummaryView.swift in Sources */,
 				DC412E83263321D2006E17B6 /* SceneDelegate.swift in Sources */,
+				DC218A27268CEE1E0078ADEA /* DataController-Awards.swift in Sources */,
 				DC3324AB2621E2D100A2C5F4 /* PurchaseButton.swift in Sources */,
 				DCBE0C302565AAEC00DA2045 /* ProjectHeaderView.swift in Sources */,
 				DC3324AD2621E3BC00A2C5F4 /* ProductView.swift in Sources */,
@@ -537,6 +646,7 @@
 				DCCEAE90254450C30081EC99 /* Project-CoreDataHelpers.swift in Sources */,
 				DC354837257AA260004B583D /* Color-Additions.swift in Sources */,
 				DCBE0C362565AF8D00DA2045 /* EditProjectView.swift in Sources */,
+				DC218A25268CEDB20078ADEA /* DataController-Reminders.swift in Sources */,
 				DC21B1572541E4B100226C6E /* DataController.swift in Sources */,
 				DC24B3FB2567F2A100C21F1D /* SelectSomethingView.swift in Sources */,
 				DC24B4042567F6D300C21F1D /* Award.swift in Sources */,
@@ -565,6 +675,11 @@
 			isa = PBXTargetDependency;
 			target = DCADD0B52541DA5D00086DD6 /* UltimatePortfolio */;
 			targetProxy = DC0B0DC12616533300DBE07D /* PBXContainerItemProxy */;
+		};
+		DC218A19268CE7090078ADEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC218A0C268CE7070078ADEA /* PortfolioWidgetExtension */;
+			targetProxy = DC218A18268CE7090078ADEA /* PBXContainerItemProxy */;
 		};
 		DC83CE9425C829A0003D3F3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -641,6 +756,64 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = UltimatePortfolio;
+			};
+			name = Release;
+		};
+		DC218A1C268CE7090078ADEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PortfolioWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BRLV2FEPT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PortfolioWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PortfolioWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thom.pheijffer.UltimatePortfolio.PortfolioWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC218A1D268CE7090078ADEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PortfolioWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2BRLV2FEPT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PortfolioWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PortfolioWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = thom.pheijffer.UltimatePortfolio.PortfolioWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -738,7 +911,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -794,7 +967,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -807,6 +980,7 @@
 		DCADD0C62541DA5D00086DD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
@@ -815,7 +989,7 @@
 				DEVELOPMENT_TEAM = 2BRLV2FEPT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = UltimatePortfolio/Configuration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -830,6 +1004,7 @@
 		DCADD0C72541DA5D00086DD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/Configuration/UltimatePortfolio.entitlements;
@@ -838,7 +1013,7 @@
 				DEVELOPMENT_TEAM = 2BRLV2FEPT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = UltimatePortfolio/Configuration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -858,6 +1033,15 @@
 			buildConfigurations = (
 				DC0B0DC42616533300DBE07D /* Debug */,
 				DC0B0DC52616533300DBE07D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC218A1E268CE7090078ADEA /* Build configuration list for PBXNativeTarget "PortfolioWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC218A1C268CE7090078ADEA /* Debug */,
+				DC218A1D268CE7090078ADEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
