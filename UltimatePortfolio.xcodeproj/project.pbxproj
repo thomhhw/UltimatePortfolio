@@ -54,6 +54,14 @@
 		DCADD0BC2541DA5D00086DD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADD0BB2541DA5D00086DD6 /* ContentView.swift */; };
 		DCADD0BE2541DA5D00086DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCADD0BD2541DA5D00086DD6 /* Assets.xcassets */; };
 		DCADD0C12541DA5D00086DD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCADD0C02541DA5D00086DD6 /* Preview Assets.xcassets */; };
+		DCBDC916268E30330083820F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC0949EB2588EF20006F5374 /* Localizable.strings */; };
+		DCBDC917268E32770083820F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBE0C322565AE4200DA2045 /* Colors.xcassets */; };
+		DCBDC918268E328C0083820F /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEAE8F254450C30081EC99 /* Project-CoreDataHelpers.swift */; };
+		DCBDC919268E329B0083820F /* Sequence-Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA7F3B2566EBC400F0AC60 /* Sequence-Sorting.swift */; };
+		DCBDC91F268E39530083820F /* ComplexWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDC91E268E39530083820F /* ComplexWidget.swift */; };
+		DCBDC921268E3A780083820F /* DataController-StoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDC920268E3A780083820F /* DataController-StoreKit.swift */; };
+		DCBDC923268E3AB80083820F /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDC922268E3AB80083820F /* DataProvider.swift */; };
+		DCBDC925268E3B370083820F /* SimpleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBDC924268E3B370083820F /* SimpleWidget.swift */; };
 		DCBE0C2725659CE900DA2045 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE0C2625659CE900DA2045 /* EditItemView.swift */; };
 		DCBE0C2A2565A06F00DA2045 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE0C292565A06F00DA2045 /* ItemRowView.swift */; };
 		DCBE0C2D2565A71700DA2045 /* Binding-OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBE0C2C2565A71700DA2045 /* Binding-OnChange.swift */; };
@@ -163,6 +171,10 @@
 		DCADD0BD2541DA5D00086DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCADD0C02541DA5D00086DD6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCADD0C22541DA5D00086DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCBDC91E268E39530083820F /* ComplexWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexWidget.swift; sourceTree = "<group>"; };
+		DCBDC920268E3A780083820F /* DataController-StoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-StoreKit.swift"; sourceTree = "<group>"; };
+		DCBDC922268E3AB80083820F /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		DCBDC924268E3B370083820F /* SimpleWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleWidget.swift; sourceTree = "<group>"; };
 		DCBE0C2625659CE900DA2045 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
 		DCBE0C292565A06F00DA2045 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 		DCBE0C2C2565A71700DA2045 /* Binding-OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding-OnChange.swift"; sourceTree = "<group>"; };
@@ -224,6 +236,9 @@
 			isa = PBXGroup;
 			children = (
 				DC218A13268CE7070078ADEA /* PortfolioWidget.swift */,
+				DCBDC91E268E39530083820F /* ComplexWidget.swift */,
+				DCBDC924268E3B370083820F /* SimpleWidget.swift */,
+				DCBDC922268E3AB80083820F /* DataProvider.swift */,
 				DC218A15268CE7090078ADEA /* Assets.xcassets */,
 				DC218A17268CE7090078ADEA /* Info.plist */,
 			);
@@ -392,6 +407,7 @@
 				DC412E80263321CB006E17B6 /* AppDelegate.swift */,
 				DC412E82263321D2006E17B6 /* SceneDelegate.swift */,
 				DC21B1562541E4B100226C6E /* DataController.swift */,
+				DCBDC920268E3A780083820F /* DataController-StoreKit.swift */,
 				DC218A24268CEDB20078ADEA /* DataController-Reminders.swift */,
 				DC218A26268CEE1E0078ADEA /* DataController-Awards.swift */,
 				DCADD0BB2541DA5D00086DD6 /* ContentView.swift */,
@@ -545,7 +561,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCBDC917268E32770083820F /* Colors.xcassets in Resources */,
 				DC218A16268CE7090078ADEA /* Assets.xcassets in Resources */,
+				DCBDC916268E30330083820F /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,7 +628,12 @@
 				DC218A1F268CECD00078ADEA /* Main.xcdatamodeld in Sources */,
 				DC218A21268CECF20078ADEA /* DataController.swift in Sources */,
 				DC218A14268CE7070078ADEA /* PortfolioWidget.swift in Sources */,
+				DCBDC91F268E39530083820F /* ComplexWidget.swift in Sources */,
+				DCBDC919268E329B0083820F /* Sequence-Sorting.swift in Sources */,
+				DCBDC925268E3B370083820F /* SimpleWidget.swift in Sources */,
+				DCBDC923268E3AB80083820F /* DataProvider.swift in Sources */,
 				DC218A20268CECE60078ADEA /* Item-CoreDataHelpers.swift in Sources */,
+				DCBDC918268E328C0083820F /* Project-CoreDataHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +665,7 @@
 				DC24B4072567F76100C21F1D /* AwardsView.swift in Sources */,
 				DCADD0BC2541DA5D00086DD6 /* ContentView.swift in Sources */,
 				DC2EE51A26171FF40086F903 /* HomeViewModel.swift in Sources */,
+				DCBDC921268E3A780083820F /* DataController-StoreKit.swift in Sources */,
 				DCA74D14261DE08A0009121E /* UnlockManager.swift in Sources */,
 				DCCEAE90254450C30081EC99 /* Project-CoreDataHelpers.swift in Sources */,
 				DC354837257AA260004B583D /* Color-Additions.swift in Sources */,
