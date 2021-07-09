@@ -59,7 +59,7 @@ class DataController: ObservableObject {
             if let error = error {
                 fatalError("Fatal error loading store \(error.localizedDescription)")
             }
-            
+
             self.container.viewContext.automaticallyMergesChangesFromParent = true
 
             #if DEBUG
@@ -148,7 +148,7 @@ class DataController: ObservableObject {
         let fetchRequest2: NSFetchRequest<NSFetchRequestResult> = Project.fetchRequest()
         delete(fetchRequest2)
     }
-    
+
     private func delete(_ fetchRequest: NSFetchRequest<NSFetchRequestResult>) {
         let batchDeleteRequest1 = NSBatchDeleteRequest(fetchRequest: fetchRequest)
         batchDeleteRequest1.resultType = .resultTypeObjectIDs
@@ -190,7 +190,7 @@ class DataController: ObservableObject {
 
         return try? container.viewContext.existingObject(with: id) as? Item
     }
-    
+
     @discardableResult func addProject() -> Bool {
         let canCreate = fullVersionUnlocked || count(for: Project.fetchRequest()) < 3
 
@@ -204,7 +204,7 @@ class DataController: ObservableObject {
             return false
         }
     }
-    
+
     func fetchRequestForTopItems(count: Int) -> NSFetchRequest<Item> {
         let itemRequest: NSFetchRequest<Item> = Item.fetchRequest()
 
@@ -215,7 +215,7 @@ class DataController: ObservableObject {
         itemRequest.fetchLimit = count
         return itemRequest
     }
-    
+
     func results<T: NSManagedObject>(for fetchRequest: NSFetchRequest<T>) -> [T] {
         return (try? container.viewContext.fetch(fetchRequest)) ?? []
     }

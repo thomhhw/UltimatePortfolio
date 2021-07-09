@@ -15,7 +15,7 @@ struct PortfolioWidgetEntryView: View {
         VStack {
             Text("Up next…")
                 .font(.title)
-            
+
             if let item = entry.items.first {
                 Text(item.itemTitle)
             } else {

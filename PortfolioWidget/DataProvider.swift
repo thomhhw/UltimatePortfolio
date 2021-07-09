@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Provider: TimelineProvider {
     typealias Entry = SimpleEntry
-    
+
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), items: [Item.example])
     }
@@ -27,7 +27,7 @@ struct Provider: TimelineProvider {
         let timeline = Timeline(entries: [entry], policy: .never)
         completion(timeline)
     }
-    
+
     func loadItems() -> [Item] {
         let groupID = "group.thom.pheijffer.UltimatePortfolio"
         if let url = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: groupID) {

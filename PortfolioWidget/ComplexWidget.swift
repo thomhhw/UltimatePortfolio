@@ -11,12 +11,12 @@ import WidgetKit
 struct PortfolioWidgetMultipleEntryView: View {
     @Environment(\.widgetFamily) var widgetFamily
     @Environment(\.sizeCategory) var sizeCategory
-    
+
     var entry: Provider.Entry
-    
+
     var items: ArraySlice<Item> {
         let itemCount: Int
-        
+
         switch widgetFamily {
         case .systemSmall:
             itemCount = 1
@@ -33,7 +33,7 @@ struct PortfolioWidgetMultipleEntryView: View {
                 itemCount = 2
             }
         }
-        
+
         return entry.items.prefix(itemCount)
     }
 
@@ -44,18 +44,18 @@ struct PortfolioWidgetMultipleEntryView: View {
                     Color(item.project?.color ?? "Light Blue")
                         .frame(width: 5)
                         .clipShape(Capsule())
-                    
+
                     VStack(alignment: .leading) {
                         Text(item.itemTitle)
                             .font(.headline)
                             .layoutPriority(1)
-                        
+
                         if let projectTitle = item.project?.projectTitle {
                             Text(projectTitle)
                                 .foregroundColor(.secondary)
                         }
                     }
-                    
+
                     Spacer()
                 }
             }
@@ -76,10 +76,9 @@ struct ComplexPortfolioWidget: Widget {
     }
 }
 
-
 struct PortfolioWidget_Previews: PreviewProvider {
     static let items = [Item.example, Item.example, Item.example, Item.example, Item.example]
-    
+
     static var previews: some View {
         Group {
             PortfolioWidgetEntryView(entry: SimpleEntry(date: Date(), items: [Item.example]))
@@ -89,7 +88,7 @@ struct PortfolioWidget_Previews: PreviewProvider {
                 .preferredColorScheme(.dark)
                 .previewContext(WidgetPreviewContext(family: .systemSmall))
         }
-        
+
         Group {
             PortfolioWidgetMultipleEntryView(entry: SimpleEntry(date: Date(), items: PortfolioWidget_Previews.items))
                 .previewContext(WidgetPreviewContext(family: .systemSmall))

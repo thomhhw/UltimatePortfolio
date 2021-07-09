@@ -45,7 +45,7 @@ extension ProjectsView {
                 print("Failed to fetch our projects!")
             }
         }
-        
+
         func addProject() {
             if dataController.addProject() == false {
                 showingUnlockView.toggle()
